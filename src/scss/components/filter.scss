@@ -1,0 +1,44 @@
+@import '../base/color';
+
+.list {
+  background-color: color(filter);
+  border-radius: 0 0 4px 4px;
+  color: color(invert);
+  float: right;
+  left: 0;
+  position: absolute;
+  text-transform: lowercase;
+  top: 45px;
+  width: 100%;
+
+  &__item {
+    cursor: pointer;
+    padding: 5px 10px;
+
+    span {
+      display: block;
+      width: 100%;
+    }
+
+    &:nth-child(odd) {
+      background-color: color(filter-primary);
+    }
+
+    &:nth-child(even) {
+      background-color: color(filter-secondary);
+    }
+
+    &:last-child {
+      border-radius: 0 0 4px 4px;
+    }
+  }
+
+  &.show {
+    box-shadow: -1px 12px 20px 0 color(shadow);
+    display: block;
+  }
+
+  &.hide {
+    display: none;
+  }
+}

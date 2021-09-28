@@ -1,0 +1,142 @@
+@import '../base/easing';
+
+@media screen and (min-width: 960px ) {
+  .grid {
+    justify-content: center;
+  }
+
+  .about {
+    .content {
+      max-width: 520px;
+    }
+  }
+
+  .search, .header {
+    position: relative;
+  }
+
+  .header {
+    box-shadow: -3px -5px 1px 5px rgba(0, 0, 0, .75);
+
+    &__search {
+      visibility: hidden;
+    }
+  }
+
+  .menu {
+    &.show {
+      box-shadow: none;
+    }
+  }
+
+  .search {
+    box-shadow: -2px 2px 7px 0 rgba(0, 0, 0, .32);
+  }
+
+
+  .list {
+    .show {
+      box-shadow: -3px 9px 8px 0 rgba(0, 0, 0, .3);
+    }
+  }
+
+  .slides {
+    width: 100%;
+
+    .first, .second {
+      width: 100%;
+    }
+  }
+
+  .detail {
+    overflow-y: hidden;
+
+    img {
+      border-radius: 4px;
+      max-width: 50vh;
+      transform: translate(-50%, -50%) translate3d(0, 0, 0);
+      width: initial;
+    }
+
+    &__cover {
+      position: relative;
+      width: 50%;
+
+      &--reflex {
+        filter: grayscale(0) blur(16px);
+        opacity: .4;
+        transform: scale(1.1);
+        width: 100%;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100%;
+      position: relative;
+    }
+
+    &__infos {
+      background-color: #edeeef;
+      box-shadow: -2px -3px 20px 0 rgba(0, 0, 0, .3);
+      min-height: 100vh;
+      overflow-y: scroll;
+      position: relative;
+      transform: translateY(0) translate3d(0, 0, 0);
+      width: 50%;
+    }
+
+    .info {
+      &__name {
+        box-shadow: none;
+        line-height: 1.9;
+        padding: 50px;
+
+        h2 {
+          font-size: 30pt;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .slides {
+    overflow: hidden;
+
+    .loader {
+      width: 10%;
+    }
+  }
+
+  .thumb {
+    margin-right: 20px;
+    width: 180px;
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__file {
+      transform: scale(1);
+      transition: filter .3s, transform .6s easing(easeOutQuart);
+    }
+
+    &:nth-child(3n + 0) {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      .thumb__file {
+        filter: brightness(15%);
+        transform: scale(1.2);
+      }
+
+      .thumb__title {
+        opacity: 1;
+        transition: opacity .3s .2s;
+      }
+    }
+  }
+}

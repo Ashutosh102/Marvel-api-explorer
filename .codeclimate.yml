@@ -1,0 +1,13 @@
+ratings:
+  paths:
+  - "src/**/*.js"
+  - "src/**/*.jsx"
+  - "src/**/*.scss"
+exclude_paths:
+- "spec/**/*"
+- "public/**/*"
+- "coverage/**/*"
+- "karma.conf.js"
+- "test.webpack.config.js"
+- "webpack.config.js"
+- "workbox-config.js"

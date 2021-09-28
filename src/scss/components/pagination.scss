@@ -1,0 +1,66 @@
+@import '../base/color';
+
+.pagination {
+  background-color: color(pagination);
+  bottom: 0;
+  box-shadow: 0 -4px 20px 0 color(shadow);
+  display: flex;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  &__content {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__link {
+    align-items: center;
+    color: color(invert);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    transition: background-color .2s;
+    width: auto;
+    z-index: 1;
+
+    &--active {
+      background-color: color(pagination-selected);
+      box-shadow: 0 1px 15px 0 color(shadow);
+      z-index: 2;
+    }
+  }
+
+  &__prev, &__next {
+    display: block;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 10px;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+  &__prev {
+    border-bottom: 0;
+    border-left: 2px solid color(invert);
+    border-right: 0;
+    border-top: 2px solid color(invert);
+
+  }
+
+  &__next {
+    border-bottom: 2px  solid color(invert);
+    border-left: 0;
+    border-right: 2px  solid color(invert);
+    border-top: 0;
+  }
+}

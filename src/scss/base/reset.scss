@@ -1,0 +1,45 @@
+@import '../base/color';
+
+@font-face {
+  font-family: 'font';
+  src: url('../fonts/font.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  font-family: inherit;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  overflow-y: auto;
+  touch-action: manipulation;
+}
+
+body, html {
+  background: linear-gradient(to bottom, color(gradient-primary), color(gradient-secondary));
+  font-family: 'font', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, ul, button {
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,67 @@
+@import '../base/color';
+@import '../base/easing';
+
+
+.slides {
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  width: 100vw;
+  z-index: 9;
+
+  .loader {
+    animation: yoyo .8s infinite;
+    opacity: 0;
+    transition: opacity .3s;
+    width: 35%;
+    z-index: 1;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  @keyframes yoyo {
+    from {
+      transform: translate(-50%, -50%)  translate3d(0, 0, 0);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.2)  translate3d(0, 0, 0);
+    }
+
+    to {
+      transform: translate(-50%, -50%)  translate3d(0, 0, 0);
+    }
+  }
+
+  .first, .second {
+    display: block;
+    height: 200vh;
+    position: absolute;
+    transform: scaleY(0) translate3d(0, 0, 0);
+    transform-origin: top;
+    width: 200vh;
+
+    &.active {
+      transform: scaleY(1) translate3d(0, 0, 0);
+    }
+
+    &.out {
+      transform: scaleY(0) translate3d(0, 0, 0);
+      transform-origin: bottom;
+      transition: transform 2s .5s easing(easeOutExpo);
+    }
+  }
+
+  .first {
+    background-color: color(primary);
+    transition: transform 2s easing(easeOutExpo);
+  }
+
+  .second {
+    background-color: color(primary);
+    transition: transform 2s .5s easing(easeOutExpo);
+  }
+}

@@ -1,0 +1,73 @@
+@import '../base/color';
+
+.header {
+  background-color: color(header);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .75);
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+
+  .logo {
+    vertical-align: middle;
+    width: 50px;
+  }
+
+  &__dots {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+
+    span {
+      display: none;
+    }
+  }
+
+  &__search {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50px;
+
+    .close-icon {
+      left: 20px;
+    }
+
+    .search-icon, .close-icon {
+      cursor: pointer;
+      height: 40px;
+      left: 50%;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%) translate3d(0, 0, 0);
+      transition: opacity .2s ;
+      width: 25px;
+
+      &.hide {
+        opacity: 0;
+      }
+    }
+  }
+
+  h1 {
+    align-self: center;
+    position: relative;
+
+    span {
+      margin-left: 4px;
+      position: relative;
+      top: 3px;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import '../base/color';
+@import '../base/easing';
+
+.detail {
+  background-color: #000000;
+  color: color(invert);
+  height: 100%;
+  left: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+
+  &__content {
+    opacity: 0;
+    position: absolute;
+    will-change: opacity;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  img {
+    background-color: color(darkest);
+    border-radius: 2%;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .3);
+    display: none;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -55%) translate3d(0, 0, 0);
+    transform-origin: left top;
+    width: 80%;
+    z-index: 1;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  &__cover {
+    display: block;
+    height: 100%;
+    perspective: 800px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+
+    &--reflex {
+      background-origin: content-box;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%);
+      height: 100%;
+      margin: 0 auto;
+      opacity: .1;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: inherit;
+
+      &::before {
+        background-image: linear-gradient(160deg, rgba(255, 255, 255, .15) 50%, transparent 50%);
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__infos {
+    background-color: color(info);
+    font-size: 16px;
+    line-height: 1.3;
+    position: absolute;
+    transform: translateY(100vh) translate3d(0, 0, 0);
+    width: 100vw;
+    z-index: 1;
+
+    section{
+      background-color: color(series);
+      color: color(secondary);
+
+      li {
+        &:nth-child(even) {
+          background-color: rgba(12, 12, 12, 0.05);
+        }
+
+        &:nth-child(odd) {
+          background-color: rgba(0, 0, 0, 0.02);
+        }
+      }
+    }
+
+  }
+
+  .info {
+    &__name {
+      background-color: color(secondary);
+      box-shadow: -2px 18px 20px 20px color(shadow);
+      padding: 15px;
+    }
+
+    &__series, &__stories, &__creators, &__characters {
+      ul {
+        list-style: inside decimal;
+      }
+
+      .sub-title {
+        padding: 15px 10px;
+      }
+
+      li {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+.disable-scroll {
+  overflow: hidden;
+}

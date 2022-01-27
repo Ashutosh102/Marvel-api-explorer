@@ -2,7 +2,7 @@ module.exports = {
   swDest: 'public/sw.js',
   runtimeCaching: [{
     // Match any same-origin request that contains 'api'.
-    urlPattern: new RegExp('^https\:\/\/gateway.marvel.com\/v1\/public\/.+'),
+    urlPattern: new RegExp('https://gateway.marvel.com/v1/public/characters/200?apikey=e511c7f96b65289a6ee7206e89172410'),
     handler: 'cacheFirst',
     options: {
       // Use a custom cache name for this route.
@@ -19,7 +19,7 @@ module.exports = {
     },
   },
   {
-    urlPattern: new RegExp('^https://gateway.marvel.com/v1/public/.+'),
+    urlPattern: new RegExp('https://gateway.marvel.com/v1/public/characters/200?apikey=e511c7f96b65289a6ee7206e89172410'),
     handler: 'staleWhileRevalidate',
     options: {
       cacheableResponse: {

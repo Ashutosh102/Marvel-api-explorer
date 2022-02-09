@@ -42,7 +42,7 @@
     "connected-react-router": "^6.9.1",
     "history": "^4.10.1",
     "npm-force-resolutions": "0.0.10",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "react-router": "^5.2.0",
     "react-router-redux": "^4.0.8",
     "redux-thunk": "^2.1.0",

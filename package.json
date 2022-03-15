@@ -62,7 +62,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.5.1",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^8.2.3",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
     "browserify-istanbul": "^3.0.1",

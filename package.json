@@ -62,7 +62,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.5.1",
-    "babel-loader": "^8.2.3",
+    "babel-loader": "^8.2.4",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
     "browserify-istanbul": "^3.0.1",
@@ -107,7 +107,7 @@
     "webpack": "^5.36.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
-    "workbox-sw": "^6.4.2",
+    "workbox-sw": "^6.5.2",
     "workbox-webpack-plugin": "^6.5.1"
   }
 }

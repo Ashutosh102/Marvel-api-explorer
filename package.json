@@ -48,7 +48,7 @@
     "redux-thunk": "^2.4.1",
     "reselect": "^4.1.6",
     "webpack-merge": "^5.8.0",
-    "workbox-cli": "^6.5.3"
+    "workbox-cli": "^6.5.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",

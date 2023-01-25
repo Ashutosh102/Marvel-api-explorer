@@ -89,7 +89,7 @@
     "babel-jest": "^29.3.1",
     "babel-loader": "^9.0.1",
 
-    "babel-jest": "^29.2.2",
+    "babel-jest": "^29.4.0",
     "babel-loader": "^9.1.2",
 
     "babelify": "^10.0.0",

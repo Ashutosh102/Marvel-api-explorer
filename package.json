@@ -117,7 +117,7 @@
     "image-webpack-loader": "^7.0.1",
     "jest": "^29.5.0",
     "json-loader": "^0.5.4",
-    "mini-css-extract-plugin": "^2.7.3",
+    "mini-css-extract-plugin": "^2.7.5",
     "node-sass": "^8.0.0",
     "postcss-cssnext": "^3.1.1",
     "postcss-loader": "^7.1.0",

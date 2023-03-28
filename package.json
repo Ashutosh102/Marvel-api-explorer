@@ -130,7 +130,7 @@
     "redux": "^4.2.1",
     "reselect": "^4.1.7",
     "resolve-url-loader": "^5.0.0",
-    "sass-loader": "^13.2.1",
+    "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
     "stylefmt": "^6.0.3",
     "stylelint-config-standard": "^31.0.0",

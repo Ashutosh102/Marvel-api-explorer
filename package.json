@@ -131,7 +131,7 @@
     "reselect": "^4.1.8",
     "resolve-url-loader": "^5.0.0",
     "sass-loader": "^13.2.2",
-    "style-loader": "^3.3.2",
+    "style-loader": "^3.3.3",
     "stylefmt": "^6.0.3",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-webpack-plugin": "^4.1.1",

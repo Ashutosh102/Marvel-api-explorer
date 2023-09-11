@@ -62,7 +62,7 @@
    "@babel/core": "^7.20.7",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.2",
 
-   "@babel/core": "^7.22.11",
+   "@babel/core": "^7.22.17",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
 
 

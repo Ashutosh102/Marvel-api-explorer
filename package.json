@@ -84,7 +84,7 @@
     "autoprefixer": "10.4.10",
 
     "@babel/register": "^7.22.5",
-    "autoprefixer": "10.4.15",
+    "autoprefixer": "10.4.16",
 
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",

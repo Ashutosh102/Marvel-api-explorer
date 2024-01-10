@@ -136,7 +136,7 @@
 
 
     "sass-loader": "^13.3.3",
-    "style-loader": "^3.3.2",
+    "style-loader": "^3.3.4",
 
     "stylefmt": "^6.0.3",
     "stylelint-config-standard": "^36.0.0",

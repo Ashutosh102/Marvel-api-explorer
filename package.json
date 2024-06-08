@@ -140,7 +140,7 @@
 
     "stylefmt": "^6.0.3",
     "stylelint-config-standard": "^36.0.0",
-    "stylelint-webpack-plugin": "^5.0.0",
+    "stylelint-webpack-plugin": "^5.0.1",
     "sw-precache-webpack-plugin": "^1.0.0",
     "system": "^2.0.1",
     "url-loader": "^4.1.1",

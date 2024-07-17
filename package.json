@@ -111,7 +111,7 @@
     "eslint-plugin-react": "^7.31.0",
 
     "eslint-plugin-jest": "^28.6.0",
-    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react": "^7.34.4",
 
     "file-loader": "^6.2.0",
     "hammerjs": "^2.0.8",

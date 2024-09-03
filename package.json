@@ -110,8 +110,10 @@
     "eslint-plugin-jest": "^27.0.2",
     "eslint-plugin-react": "^7.31.0",
 
-    "eslint-plugin-jest": "^28.8.1",
+
+    "eslint-plugin-jest": "^28.8.2",
     "eslint-plugin-react": "^7.35.1",
+
 
     "file-loader": "^6.2.0",
     "hammerjs": "^2.0.8",

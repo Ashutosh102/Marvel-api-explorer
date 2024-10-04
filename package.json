@@ -96,7 +96,7 @@
     "babel-loader": "^9.2.1",
 
     "babelify": "^10.0.0",
-    "browserify": "^17.0.0",
+    "browserify": "^17.0.1",
     "browserify-istanbul": "^3.0.1",
     "clean-webpack-plugin": "^4.0.0",
     "compression-webpack-plugin": "^11.1.0",
